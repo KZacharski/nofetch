@@ -5428,6 +5428,24 @@ get_distro_ascii() {
     #
     # $ascii_distro is the same as $distro.
     case $(trim "$ascii_distro") in
+        "Pufferbian"*)
+            set_colors 2
+            read -rd '' ascii_data <<'EOF'
+${c1}                CAT
+                  CAT  CAT
+               CAT         CAT
+             CAT             CAT
+          CAT                   CAT
+       CAT                        CAT
+          CAT                   CAT
+             CAT              CAT
+               CAT          CAT
+                  CAT   CAT
+                     CAT
+
+EOF
+        ;;
+    case $(trim "$ascii_distro") in
         "AIX"*)
             set_colors 2 7
             read -rd '' ascii_data <<'EOF'
